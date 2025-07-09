@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartNote AI - Write Smarter, Not Harder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="logo.png" alt="SmartNote AI Logo" class="logo">
+                <span>SmartNote AI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="bubble-1"></div>
+        <div class="bubble-2"></div>
+        <div class="bubble-3"></div>
+        <div class="bubble-4"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">SmartNote AI</h1>
+                <p class="hero-tagline">Write Smarter, Not Harder</p>
+                <p class="hero-description">
+                    Transform your note-taking experience with AI-powered features. 
+                    Capture, organize, and enhance your thoughts with intelligent summarization, 
+                    voice-to-text, and seamless organization.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/farhadhossain001/smartnote_ai/raw/refs/heads/main/SmartNote%20Ai.apk" class="btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download
+                    </a>
+                    <a href="#screenshots" class="btn-secondary">View Screenshots</a>
+                </div>
+               
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <img src="screenshots/1.png" alt="SmartNote AI App Interface" class="phone-screenshot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2 class="section-title">App Screenshots</h2>
+            <div class="screenshot-slider">
+                <div class="slider-container">
+                    <div class="slide active">
+                        <img src="screenshots/1.png" alt="SmartNote AI Home Screen">
+                    </div>
+                    <div class="slide">
+                        <img src="screenshots/2.png" alt="AI Summary Feature">
+                    </div>
+                    <div class="slide">
+                        <img src="screenshots/3.png" alt="Voice Notes Interface">
+                    </div>
+                    <div class="slide">
+                        <img src="screenshots/4.png" alt="Note Organization">
+                    </div>
+                    <div class="slide">
+                        <img src="screenshots/5.png" alt="Dark Mode View">
+                    </div>
+                    <div class="slide">
+                        <img src="screenshots/6.png" alt="Settings and Features">
+                    </div>
+                </div>
+                <button class="slider-btn prev" onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next" onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why SmartNote AI?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>AI Summarization</h3>
+                    <p>Automatically generate concise summaries of your lengthy notes with advanced AI technology.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎤</div>
+                    <h3>Voice-to-Text Notes</h3>
+                    <p>Convert your voice recordings into accurate text notes instantly with our speech recognition.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>Edit & Organize Easily</h3>
+                    <p>Intuitive editing tools and smart organization features to keep your notes structured.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Offline Storage</h3>
+                    <p>Access and edit your notes anytime, anywhere, even without an internet connection.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌙</div>
+                    <h3>Dark Mode</h3>
+                    <p>Easy on the eyes with a beautiful dark theme for comfortable note-taking in any lighting.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Improve Wording</h3>
+                    <p>Enhance your writing with AI-powered suggestions to improve clarity, tone, and style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About SmartNote AI</h2>
+                <p>
+                    SmartNote AI revolutionizes the way you capture and organize your thoughts. 
+                    Our intelligent note-taking app combines the power of artificial intelligence 
+                    with intuitive design to help you be more productive than ever before.
+                </p>
+                <p>
+                    Whether you're a student, professional, or creative thinker, SmartNote AI 
+                    adapts to your workflow and enhances your note-taking experience with 
+                    features like automatic summarization, voice transcription, and smart organization.
+                </p>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is the app free?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>SmartNote AI offers a free version with all features. Premium features like advanced AI summarization and rewrites are available in this version.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Does it work offline?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can create, edit, and view your notes completely offline. AI features require an internet connection, but your notes are always accessible.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is my data secure?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We use end-to-end encryption for all your notes and follow industry-standard security practices. Your data is never shared with third parties.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I sync across devices?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, the notes only saved locally on your device. So there is no option to sync across devices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-brand">
+                        <img src="logo.png" alt="SmartNote AI Logo" class="logo">
+                        <span>SmartNote AI</span>
+                    </div>
+                    <p>Write Smarter, Not Harder</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Bug Report</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SmartNote AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
